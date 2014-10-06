@@ -1,4 +1,4 @@
-<?php namespace App\Http\Filters;
+<?php namespace migrationInjectionPlay\Http\Filters;
 
 use Illuminate\Http\Request;
 use Illuminate\Routing\Route;

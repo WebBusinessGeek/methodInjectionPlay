@@ -1,6 +1,8 @@
-<?php namespace App\Http\Controllers;
+<?php namespace migrationInjectionPlay\Http\Controllers;
 
 use Illuminate\Routing\Controller;
+
+use migrationInjectionPlay;
 
 class HomeController extends Controller {
 
@@ -23,6 +25,14 @@ class HomeController extends Controller {
 	public function index()
 	{
 		return view('hello');
+	}
+
+
+
+	public function test(){
+
+		$newClass = new migrationInjectionPlay\NewClass;
+		dd($newClass);
 	}
 
 }

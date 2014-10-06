@@ -1,4 +1,4 @@
-<?php namespace App\Providers;
+<?php namespace migrationInjectionPlay\Providers;
 
 use Exception;
 use Illuminate\Contracts\Logging\Log;

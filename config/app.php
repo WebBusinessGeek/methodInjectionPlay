@@ -13,7 +13,7 @@ return [
 	|
 	*/
 
-	'debug' => false,
+	'debug' => true,
 
 	/*
 	|--------------------------------------------------------------------------
@@ -98,13 +98,13 @@ return [
 		/*
 		 * Application Service Providers...
 		 */
-		'App\Providers\AppServiceProvider',
-		'App\Providers\ArtisanServiceProvider',
-		'App\Providers\ErrorServiceProvider',
-		'App\Providers\EventServiceProvider',
-		'App\Providers\FilterServiceProvider',
-		'App\Providers\LogServiceProvider',
-		'App\Providers\RouteServiceProvider',
+		'migrationInjectionPlay\Providers\AppServiceProvider',
+		'migrationInjectionPlay\Providers\ArtisanServiceProvider',
+		'migrationInjectionPlay\Providers\ErrorServiceProvider',
+		'migrationInjectionPlay\Providers\EventServiceProvider',
+		'migrationInjectionPlay\Providers\FilterServiceProvider',
+		'migrationInjectionPlay\Providers\LogServiceProvider',
+		'migrationInjectionPlay\Providers\RouteServiceProvider',
 
 		/*
 		 * Laravel Framework Service Providers...

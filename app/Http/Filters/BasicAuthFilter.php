@@ -1,4 +1,4 @@
-<?php namespace App\Http\Filters;
+<?php namespace migrationInjectionPlay\Http\Filters;
 
 use Illuminate\Contracts\Auth\Authenticator;
 
