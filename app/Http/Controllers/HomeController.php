@@ -6,6 +6,11 @@ use migrationInjectionPlay;
 
 class HomeController extends Controller {
 
+	public function __construct(migrationInjectionPlay\NewClass $newClass){
+
+		$this->newClass = $newClass;
+	}
+
 	/*
 	|--------------------------------------------------------------------------
 	| Default Home Controller
@@ -19,20 +24,34 @@ class HomeController extends Controller {
 	|
 	*/
 
-	/**
-	 * @Get("/", as="home")
-	 */
-	public function index()
-	{
-		return view('hello');
+
+	public function test1(){
+
+		// new class utilization using new keyword
+		
+		$newClass = new migrationInjectionPlay\NewClass;
+		
+		dd($newClass->message);
 	}
 
 
 
-	public function test(){
+	public function test2(){
 
-		$newClass = new migrationInjectionPlay\NewClass;
-		dd($newClass);
+		// new class using ___constructor method *(construtor method line 9)*
+		
+		dd($this->newClass->message);
+
+	}
+
+
+
+	public function test3(migrationInjectionPlay\NewClass $newClass){
+
+		// new class using method injection from Laravel 5
+		
+		dd($newClass->message);
+
 	}
 
 }

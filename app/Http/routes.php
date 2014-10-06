@@ -14,5 +14,10 @@
 $router->get('/', 'HomeController@index');
 
 
+$router->get('/test1', 'HomeController@test1');
 
-$router->get('/test', 'HomeController@test');
+
+$router->get('/test2', 'HomeController@test2');
+
+
+$router->get('/test3', 'HomeController@test3');
